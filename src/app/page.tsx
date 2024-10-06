@@ -1,16 +1,17 @@
+"use client"
 import Image from "next/image";
-import Link from "next/link";
 import { LatestArticle, popularDeals } from "../../utils/populardeals";
 import Corocdile from "./assets/img8.png"
 import EthMap from './assets/img1.png'
 import { bestDeals } from "./../../utils/bestdeals"
+
 export default function Home() {
   return (
     <div className="w-full  items-center flex-col justify-center flex ">
 
       {/* BestDEals */}
+      <div className="w-full flex items-center justify-center flex-col">
 
-      <div className="w-full flex items-center flex-col">
         <h2 className="border-black border-t-2 border-b-2 pt-10 pb-10 mt-7">SEE OUR BEST DEALS
         </h2>
 
