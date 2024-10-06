@@ -3,9 +3,37 @@ import Link from "next/link";
 import { LatestArticle, popularDeals } from "../../utils/populardeals";
 import Corocdile from "./assets/img8.png"
 import EthMap from './assets/img1.png'
+import { bestDeals } from "./../../utils/bestdeals"
 export default function Home() {
   return (
     <div className="w-full  items-center flex-col justify-center flex ">
+
+      {/* BestDEals */}
+
+      <div className="w-full flex items-center flex-col">
+        <h2 className="border-black border-t-2 border-b-2 pt-10 pb-10 mt-7">SEE OUR BEST DEALS
+        </h2>
+
+        <div className="w-full h-full   flex flex-wrap pl-60 pr-60">
+
+          {bestDeals.map((tribe) => {
+            return (
+              <div className="w-80 ml-2 shadow-lg mt-5 flex flex-col items-start justify-start">
+                <Image src={tribe?.image} alt="ii" className="w-full h-52" />
+                <div className="pl-5 pr-5 pb-10 bg-white mt-5 flex flex-col items-center">
+
+                  <h1 className="mt-2 text-xl text-center">{tribe?.title}</h1>
+                  <h3 className="mt-2 mb-5">{tribe?.date}</h3>
+                  <p className="text-sm">{tribe?.desc}</p>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+
+      </div>
+
+
 
       {/* AboutEthiopia */}
 

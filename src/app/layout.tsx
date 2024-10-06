@@ -28,6 +28,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="w-full h-48 bg-white flex flex-row items-center justify-between pl-52 pr-52">
+          <h3>Ethiopia</h3>
+          <div className="flex flex-row items-center gap-10">
+            <h2>Deals</h2>
+            <h2>About</h2>
+            <h2>Popular</h2>
+            <h2>Contact</h2>
+
+
+          </div>
+          <h2>Support</h2>
+        </div>
         {children}
       </body>
     </html>
