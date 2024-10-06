@@ -2,14 +2,37 @@ import Image from "next/image";
 import Link from "next/link";
 import { LatestArticle, popularDeals } from "../../utils/populardeals";
 import Corocdile from "./assets/img8.png"
+import EthMap from './assets/img1.png'
 export default function Home() {
   return (
     <div className="w-full  items-center flex-col justify-center flex ">
-      <div className="border-black border-t-2 border-b-2 pt-5 pb-5 mt-7">
-        <h2>POPULAR EXPERIENCES IN ETHIOPIA</h2>
+
+      {/* AboutEthiopia */}
+
+      <div className="flex items-center w-full pl-96 pr-96 bg-slate-300 justify-center flex-col">
+        <div className="border-black w-96 flex justify-center border-t-2 border-b-2 pt-10 pb-10 mt-7">
+          <h2>About ETHIOPIA</h2>
+
+        </div>
+        <div className="flex items-center  gap-32 justify-between w-full mt-28 mb-28">
+
+          <Image src={EthMap} alt="corocodile" className="" />
+          <div className="flex flex-col items-center gap-24">
+            <p>Best time to go – mid-October to June (dry season)</p>
+            <p>High Season – Between October and January</p>
+            <p>Size – 1,104,300 km² (about five times larger than UK)</p>
+          </div>
+
+        </div>
+        <h2 className="font-bold text-3xl font-serif mb-20">HOME TO 9 UNESCO WORLD HERITAGE SITES</h2>
+
+
       </div>
 
       {/* POPULAR EXPERIENCES IN ETHIOPIA */}
+      <div className="border-black border-t-2 border-b-2 pt-10 pb-10 mt-7">
+        <h2>POPULAR EXPERIENCES IN ETHIOPIA</h2>
+      </div>
       <div className="w-full h-full flex flex-wrap pl-96 pr-96">
 
         {popularDeals.map((tribe) => {
@@ -31,7 +54,7 @@ export default function Home() {
 WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE? */}
       <div className="w-full flex items-center justify-center flex-col">
 
-        <div className="border-black border-t-2 border-b-2 pt-5 pb-5 mt-7">
+        <div className="border-black border-t-2 border-b-2 pt-10 pb-10 mt-7">
           <h2>WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h2>
         </div>
         <div className="w-full h-full  mt-32 pr-96 pl-96 mb-20 flex flex-row items-center gap-20">
@@ -45,7 +68,7 @@ WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE? */}
       {/* Latest Article*/}
       <div className="w-full flex items-center justify-center flex-col">
 
-        <div className="border-black border-t-2 border-b-2 pt-5 pb-5 mt-7">
+        <div className="border-black border-t-2 border-b-2 pt-10 pb-10 mt-7">
           <h2>WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h2>
         </div>
         <div className="w-full h-full flex flex-wrap pl-96 pr-96">
