@@ -11,7 +11,7 @@ const layout = ({ children }: any) => {
                     <p className='text-black font-bold text-2xl'>leul11</p>
                 </div>
                 <ul className='flex w-1/2 flex-row items-center pr-36 pl-36 justify-between'>
-                    <li className='text-blue-800 font-semibold text-2xl'>Home</li>
+                    <li className='text-blue-800 font-semibold text-2xl hover:text-red-950 cursor-pointer'>Home</li>
                     <li className='text-blue-800 font-semibold text-2xl'>Story</li>
                     <li className='text-blue-800 font-semibold text-2xl'>Contact</li>
                     <li className='text-blue-800 font-semibold text-2xl'>Account</li>
