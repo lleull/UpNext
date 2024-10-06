@@ -50,3 +50,20 @@ export const popularDeals = [
         desc: "The striking town, conveniently located amidst green hills offers grand views over the rift valley lakes of Chamo and Abaya."
     }
 ]
+
+export const LatestArticle = [{
+    title: "ADDIS ABABA – A GUIDE TO THE CITY",
+    writtenBy: "by EmmaK | Jun 21, 2024",
+    article: "Addis Ababa, Ethiopia's capital city, is a lively mix of old and new. Originally founded in the late 19th century, and made capital of Ethiopia in the 20th century, this city includes a mix of traditional Ethiopian culture and modern influence. Here is a handy guide..."
+
+},
+{
+    title: "TOP 5 THINGS YOU MUST SEE IN ETHIOPIA",
+    writtenBy: "by EmmaK | Apr 19, 2024",
+    article: "Despite its rich cultural heritage, storied history and stunning scenery, Ethiopia flies under the radar for travellers. Don’t let its low profile fool you, Ethiopia is packed with must-see destinations. Here’s our breakdown of the top 5 things you must see when..."
+}, {
+    title: "A LOOK AT THE KARA TRIBE, ETHIOPIA’S FAMOUS BODY PAINTERS",
+    writtenBy: "by AEDeveloper | Mar 11, 2020",
+    article: "o Famous for their body and face painting, the Karo people are a Nilotic ethnic group that resides along the east banks of the river in southern Ethiopia. With an estimated population between 1000 and 3000, the Karo tribe is one of the smallest tribes amongst the Omo.."
+},
+]
