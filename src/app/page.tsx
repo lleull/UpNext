@@ -4,11 +4,32 @@ import { LatestArticle, popularDeals } from "../../utils/populardeals";
 import Corocdile from "./assets/img8.png"
 import EthMap from './assets/img1.png'
 import { bestDeals } from "./../../utils/bestdeals"
+import img from "./assets/nene.jpg"
+export const Header = () => {
+  return (
+    <div className="w-full h-48 flex flex-row items-center justify-between pl-64 pr-64 z-100  animate-slideIn">
+      <h3 className="text-3xl font-serif font-bold">Traveler</h3>
+      <div className="flex flex-row items-center gap-10">
+        <h2>Deals</h2>
+        <h2>About</h2>
+        <h2>Popular</h2>
+        <h2>Contact</h2>
 
+
+      </div>
+      <h2>Support</h2>
+    </div>
+  )
+}
 export default function Home() {
   return (
     <div className="w-full  items-center flex-col justify-center flex ">
-
+      <Image src={img} className="w-full h-[100vh] absolute top-0 z-0" alt="s" />
+      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+      <Header />
+      <div className="w-full flex-col h-[80vh] flex items-center ">
+        <h1 className="text-7xl text-pretty font-extrabold font-sans mt-64 animate-slideIn">Travel to Ethiopia <p className="text-lg text-pretty font-semibold text-center">The richest historical country</p></h1>
+      </div>
       {/* BestDEals */}
       <div className="w-full flex items-center justify-center flex-col">
 
@@ -38,7 +59,7 @@ export default function Home() {
 
       {/* AboutEthiopia */}
 
-      <div className="flex items-center w-full pl-96 pr-96 bg-slate-300 justify-center flex-col">
+      <div className="flex items-center w-full pl-64 pr-64 bg-slate-300 justify-center flex-col">
         <div className="border-black w-96 flex justify-center border-t-2 border-b-2 pt-10 pb-10 mt-7">
           <h2>About ETHIOPIA</h2>
 
@@ -62,7 +83,7 @@ export default function Home() {
       <div className="border-black border-t-2 border-b-2 pt-10 pb-10 mt-7">
         <h2>POPULAR EXPERIENCES IN ETHIOPIA</h2>
       </div>
-      <div className="w-full h-full flex flex-wrap pl-96 pr-96">
+      <div className="w-full h-full flex flex-wrap pl-52 pr-52">
 
         {popularDeals.map((tribe) => {
           return (
@@ -86,7 +107,7 @@ WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE? */}
         <div className="border-black border-t-2 border-b-2 pt-10 pb-10 mt-7">
           <h2>WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h2>
         </div>
-        <div className="w-full h-full  mt-32 pr-96 pl-96 mb-20 flex flex-row items-center gap-20">
+        <div className="w-full h-full  mt-32 pr-64 pl-64 mb-20 flex flex-row items-center gap-20">
           <Image src={Corocdile} alt="corocodile" className="w-1/2 h-80" />
           <p>Ethiopia is Africa’s second largest country by population and 10th largest by size so there is a lot to know and be aware of.
             We are locally born in Ethiopia and educated here. We know the country, the terrain and the people. Professionally qualified and certified to take charge of Ethiopian tourist expeditions, we promise to take care of you and provide you an experience like no other. Despite Ethiopia being known as a poor country, you will still feel that touch of luxury with our modern, top-quality transportation and accommodation services.</p>
@@ -100,7 +121,7 @@ WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE? */}
         <div className="border-black border-t-2 border-b-2 pt-10 pb-10 mt-7">
           <h2>WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h2>
         </div>
-        <div className="w-full h-full flex flex-wrap pl-96 pr-96">
+        <div className="w-full h-full flex flex-wrap pl-64 pr-64">
 
           {LatestArticle.map((tribe) => {
             return (
