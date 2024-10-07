@@ -5,10 +5,11 @@ import Corocdile from "./assets/img8.png"
 import EthMap from './assets/img1.png'
 import { bestDeals } from "./../../utils/bestdeals"
 import img from "./assets/nene.jpg"
+import LogoImg from "./assets/prev.png"
 export const Header = () => {
   return (
     <div className="w-full h-48 flex flex-row items-center justify-between pl-64 pr-64 z-100  animate-slideIn">
-      <h3 className="text-3xl font-serif font-bold">Traveler</h3>
+      <Image width={150} height={150} src={LogoImg} alt="as" />
       <div className="flex flex-row items-center gap-10">
         <h2>Deals</h2>
         <h2>About</h2>
@@ -24,14 +25,21 @@ export const Header = () => {
 export default function Home() {
   return (
     <div className="w-full  items-center flex-col justify-center flex ">
+
+
+
       <Image src={img} className="w-full h-[100vh] absolute top-0 z-0" alt="s" />
-      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-lg"></div>
       <Header />
       <div className="w-full flex-col h-[80vh] flex items-center ">
         <h1 className="text-7xl text-pretty font-extrabold font-sans mt-64 animate-slideIn">Travel to Ethiopia <p className="text-lg text-pretty font-semibold text-center">The richest historical country</p></h1>
       </div>
+
+
+
+
       {/* BestDEals */}
-      <div className="w-full flex items-center justify-center flex-col">
+      <div className="w-full h-[80vh] mb-52 mt-52 flex items-center justify-center flex-col">
 
         <h2 className="border-black border-t-2 border-b-2 pt-10 pb-10 mt-7">SEE OUR BEST DEALS
         </h2>
