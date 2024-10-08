@@ -17,9 +17,20 @@ const config: Config = {
           '0%': { transform: 'translateY(-10px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        slideleft: {
+          '0%': { transform: 'translateX(-100px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideright: {
+          '0%': { transform: 'translateX(100px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
       },
       animation: {
         slideIn: 'slideIn 0.5s ease-out forwards',
+        slideleft: 'slideleft 0.5s ease-in-out forwards',
+        slideright: 'slideright 0.5s ease-in-out forwards',
+
       },
     }
 
