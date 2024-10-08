@@ -119,7 +119,7 @@ export default function Home() {
       {/* WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE? */}
 
       <div className="w-full flex items-center justify-center flex-col">
-        <h2 className="text-2xl font-serif text-black font-extrabold pt-10 pb-10 text-left pl-64 w-full border-1 border-red-300">WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h2>
+        <h3 className="text-2xl font-serif text-black font-extrabold pt-10 pb-10 text-left pl-64 w-full border-1 border-red-300">WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h3>
         <div className="w-full h-full  mt-10 pr-80 pl-80 mb-20 flex flex-row items-center gap-20">
           <Image src={Corocdile} alt="corocodile" className="w-1/2 h-80 animate-slideleft" />
           <p className="animate-slideright text-lg">Ethiopia is Africa’s second largest country by population and 10th largest by size so there is a lot to know and be aware of.
@@ -127,35 +127,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-full flex-col flex bg-blue-400   items-center justify-center  pl-5 pr-5 pb-20 bg-gradient-to-r ">
-        <h1 className="text-black text-3xl font-bold mt-24">Team Members</h1>
-        <div className="w-full h-full flex-row flex bg-blue-400   items-center justify-center  pl-5 pr-5">
 
-          {
-            TeamMember?.map((tribe, index) => {
-              return (
-
-                <div className="w-80  mt-5 flex flex-col  z-10  shadow-2xl items-center justify-center  pt-10 bg-white rounded-xl ml-1">
-                  <Image src={tribe?.image} alt="ii" width={50} height={80} className="flex rounded-sm" />
-                  <div className="pl-5 pr-5 pb-10 bg-white pt-5 flex flex-col items-center">
-
-                    <h1 className=" text-xl text-center text-black">{tribe?.name}</h1>
-                    <h3 className="mt-2 mb-5 text-black">{tribe?.job}</h3>
-                  </div>
-                </div>
-
-
-              )
-            })
-
-          }
-        </div>
-      </div>
 
 
       {/* Latest Article*/}
       <div className="w-full flex items-center justify-center flex-col">
-        <h2 className="border-black text-2xl font-serif text-black font-extrabold pt-10 pb-10 text-left w-full p-64">Articles</h2>
+        <h3 className="border-black text-2xl font-serif text-black font-extrabold pt-10 pb-10 text-left w-full p-64">Articles</h3>
 
 
         <div className="w-full h-full flex flex-wrap pl-64 pr-64">
@@ -171,7 +148,59 @@ export default function Home() {
             )
           })}
         </div>
+        <div className="w-full h-full flex-col flex  items-center justify-center  pl-5 pr-5 pb-20 bg-gradient-to-r   from-green-800 to-white">
+          <h1 className="text-black text-3xl font-bold mt-24">Team Members</h1>
+          <div className="w-full h-full flex-row flex    items-center justify-center  pl-5 pr-5">
 
+            {
+              TeamMember?.map((tribe, index) => {
+                return (
+
+                  <div className="w-80  mt-5 flex flex-col  z-10  shadow-2xl items-center justify-center  pt-10 bg-white rounded-xl ml-1">
+                    <Image src={tribe?.image} alt="ii" width={80} height={80} className="flex rounded-full" />
+                    <div className="pl-5 pr-5 pb-10 bg-white pt-5 flex flex-col items-center">
+
+                      <h1 className=" text-xl text-center text-black font-bold">{tribe?.name}</h1>
+                      <h3 className="mt-2 mb-5 text-gray-500 text-lg ">{tribe?.job}</h3>
+                    </div>
+                  </div>
+
+
+                )
+              })
+
+            }
+          </div>
+        </div>
+
+
+      </div>
+
+      <div className="w-full h-[40vh] bg-gradient-to-r from-white to-green-200 flex flex-col items-center justify-start">
+        <h1 className="text-black font-bold text-2xl">www.beyondtrip.vercel.app</h1>
+        <div className="flex flex-row justify-center pl-20 pr-20 items-center h-full ">
+
+          <div className="text-left w-1/4">
+            <h1 className="text-black font-serif font-bold mb-4">About</h1>
+            <p className="text-sm text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vel enim error fugit saepe doloremque quaerat accusamus facilis corporis sunt. Molestias, provident fugit? Eos rerum sequi repudiandae, non magnam sed.</p>
+          </div>
+
+          <div className="text-left w-1/4">
+            <h1 className="text-black font-serif font-bold mb-4">Service</h1>
+            <p className="text-black">Tour over cities</p>
+          </div>
+
+          <div className="text-left w-1/4">
+            <h1 className="text-black font-serif font-bold mb-4">Newslettter</h1>
+            <p className="text-sm text-black">Lorem ipsum sequi repudiandae, non magnam sed.</p>
+            <input className="pt-5 pl-10 pr-10 bg-black rounded-xl" />
+          </div>
+
+          <div className="text-left w-1/4">
+            <h1 className="text-black font-serif font-bold mb-4">Service</h1>
+            <p className="text-black">Tour over cities</p>
+          </div>
+        </div>
 
       </div>
     </div >
