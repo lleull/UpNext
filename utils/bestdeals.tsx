@@ -67,17 +67,17 @@ export const bestDeals = [
         desc: "Witness unreal views of the one-of-a-kind Danakil Depression as you explore the lowest and hottest quarters of Africa…"
 
     },
-    {
-        id: 5,
-        image: Birding,
-        title: "BIRDING DESTINATIONS",
-        desc: 'Ethiopia, in the Horn of Africa, is an excellent choice for birding. Thousands of visitors visit Ethiopia to behold the splendid wonders of birds interacting with their natural environment.',
+    // {
+    //     id: 5,
+    //     image: Birding,
+    //     title: "BIRDING DESTINATIONS",
+    //     desc: 'Ethiopia, in the Horn of Africa, is an excellent choice for birding. Thousands of visitors visit Ethiopia to behold the splendid wonders of birds interacting with their natural environment.',
 
-    },
-    {
-        id: 6,
-        image: Omo,
-        title: "OMO VALLEY SITES",
-        desc: "The striking town, conveniently located amidst green hills offers grand views over the rift valley lakes of Chamo and Abaya."
-    }
+    // },
+    // {
+    //     id: 6,
+    //     image: Omo,
+    //     title: "OMO VALLEY SITES",
+    //     desc: "The striking town, conveniently located amidst green hills offers grand views over the rift valley lakes of Chamo and Abaya."
+    // }
 ]

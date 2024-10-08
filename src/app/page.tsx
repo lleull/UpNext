@@ -5,9 +5,10 @@ import Corocdile from "./assets/img8.png"
 import EthMap from './assets/img1.png'
 import { bestDeals } from "./../../utils/bestdeals"
 import img from "./assets/nene.jpg"
+import img2 from "./assets/eth.jpeg"
 import LogoImg from "./assets/prev.png"
 import { useState } from "react";
-import { BiArrowToRight, BiArrowFromBottom, BiArrowToBottom, BiCalendar } from "react-icons/bi";
+import { BiArrowToRight, BiArrowFromBottom, BiArrowToBottom, BiCalendar, BiUserCircle, BiUser } from "react-icons/bi";
 import { FaLocationArrow } from "react-icons/fa";
 export const Header = () => {
   return (
@@ -21,69 +22,80 @@ export const Header = () => {
 
 
       </div>
-      <button className="animate-slideIn bg-white rounded-2xl pl-10 pt-2 pr-10 pb-2 items-center ">Book Now</button>
+      <div className="flex flex-row items-center gap-5">
+
+        <button className="animate-slideIn bg-white rounded-2xl pl-10 pt-2 pr-10 pb-2 items-center ">Book Now</button>
+        <button className="animate-slideIn bg-black text-white rounded-2xl pl-10 pt-2 pr-10 pb-2 items-center border-white border-2">Contact Now</button>
+      </div>
 
     </div>
   )
 }
 export default function Home() {
-  const [moreSelected, setmoreSelected] = useState(false)
+  const [moreSelected, setmoreSelected] = useState(true)
   return (
     <div className="w-full  items-center flex-col justify-center flex ">
       <Image src={img} className="w-full h-[100vh] absolute top-0 z-0" alt="s" />
       <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
       <Header />
       <div className="w-full flex-col h-[80vh] flex items-center  text-center ">
-        <h1 className="text-6xl text-pretty font-serif  mt-32 animate-slideIn">Travel to Ethiopia  An Amazing <br /> Natural Adventure</h1>
-        <p>Discover the best and richest natural and historical country, we will guide you throught bottom to top</p>
-        <button className="animate-slideIn bg-white rounded-xl pl-10 pt-5 pr-10 pb-5 items-center mt-10">Get in Touch</button>
+        <h1 className="text-7xl text-pretty font-serif  mt-32 animate-slideIn">Travel to Ethiopia  An Amazing <br /> Natural Adventure</h1>
+        <p className="z-10 text-white mt-4 text-sm">Discover the best and richest natural and historical country, we will guide you throught bottom to top <br /> where your wanderlust can be transformed into memorable journeys.</p>
 
 
-        <div className="flex  flex-row items-center h-64 justify-between bg-white ">
+        <div className="flex  flex-row items-center h-54 pt-5 pb-5 rounded-3xl pl-5 pr-5 justify-between z-10  bg-white  gap-10 mt-40">
+
           <div className="flex flex-row items-center z-50 gap-5">
-            <FaLocationArrow color="white" className="border p-1 w-10 h-10 rounded-full" />
-            <h4 className="flex flex-col font-light text-gray-400 text-left">
+            <FaLocationArrow color="black" className="border-2 p-1 w-10 h-10 rounded-full" />
+            <h4 className="flex flex-col font-light text-gray-700 text-left">
               Destinations
-              <h2 className="font-bold">Omo Valley</h2>
+              <h3 className="font-bold text-black">Omo Valley</h3>
             </h4>
-            <BiArrowToBottom color="white" className="ml-1  p-1 w-8 h-8 rounded-full" />
+            <BiArrowToBottom color="black" className="ml-1  p-1 w-8 h-8 rounded-full" />
           </div>
+
+
+
+
           <div className="flex flex-row items-center z-50 gap-5">
-            <BiCalendar color="white" className="ml-1  p-1 w-8 h-8 rounded-full" />
-            <h4 className="flex flex-col font-light text-gray-400 text-left">
+            <BiCalendar color="black" className="ml-1 border-2  p-1 w-10 h-10 rounded-full" />
+            <h4 className="flex flex-col font-light text-gray-700 text-left">
               Date
-              <h2 className="font-bold">Aug 17, 2023</h2>
+              <h3 className="font-bold text-black">Aug 17, 2023</h3>
             </h4>
-            <FaLocationArrow color="white" className="border p-1 w-10 h-10 rounded-full" />
-          </div> <div className="flex flex-row items-center z-50 gap-5">
-            <FaLocationArrow color="white" className="border p-1 w-10 h-10 rounded-full" />
-            <h4 className="flex flex-col font-light text-gray-400 text-left">
-              Destinations
-              <h2 className="font-bold">Omo Valley</h2>
-            </h4>
-            <BiArrowToBottom color="white" className="ml-1  p-1 w-8 h-8 rounded-full" />
+            <BiArrowToBottom color="black" className="ml-1  p-1 w-8 h-8 rounded-full" />
           </div>
 
-          <button className="animate-slideIn bg-black text-white rounded-2xl pl-10 pt-2 pr-10 pb-2   flex flex-row items-center gap-7">Book Now <BiArrowToRight color="orange" width={50} /></button>
+
+          <div className="flex flex-row items-center z-50 gap-5">
+            <BiUser color="black" className="border-2 p-1 w-10 h-10 rounded-full" />
+            <h4 className="flex flex-col font-light text-gray-700 text-left">
+              Money of people
+              <h3 className="font-bold text-black">Adults 2</h3>
+            </h4>
+            <BiArrowToBottom color="black" className="ml-1  p-1 w-8 h-8 rounded-full" />
+          </div>
+
+          <button className="animate-slideIn bg-black text-white rounded-2xl pl-10 pt-3 pr-10 pb-3   flex flex-row items-center gap-7">Book Now <BiArrowToRight color="orange" width={50} /></button>
 
         </div>
       </div>
       {/* BestDEals */}
-      <div className="w-full mb-52 mt-20 flex items-center justify-center flex-col">
+      <div className="w-full relative mb-52 pt-20 flex items-center justify-center flex-col">
 
-        <h2 className="border-black text-4xl font-serif text-black font-extrabold pt-10 pb-10">SEE OUR BEST DEALS
-        </h2>
+        <h3 className=" z-10 border-black text-4xl font-serif text-black font-extrabold pt-10 pb-10 w-full text-left pl-64">SEE OUR BEST DEALS
+        </h3>
 
         <div className="w-full h-full   flex flex-wrap pl-60 pr-60">
-          {moreSelected ?
-            bestDeals.map((tribe, index) => {
+          {
+            bestDeals?.map((tribe, index) => {
               return (
                 index < 4 ?
-                  <div className="w-80 ml-2 shadow-lg mt-5 flex flex-col items-start justify-start">
+                  <div className="w-80 ml-2  mt-5 flex flex-col  z-10  shadow-2xl">
                     <Image src={tribe?.image} alt="ii" className="w-full h-52" />
-                    <div className="pl-5 pr-5 pb-10 bg-white mt-5 flex flex-col items-center">
+                    <div className="pl-5 pr-5 pb-10 bg-white pt-5 flex flex-col items-center">
 
-                      <h1 className="mt-2 text-xl text-center text-black">{tribe?.title}</h1>
+                      <h1 className=" text-xl text-center text-black">{tribe?.title}</h1>
                       <h3 className="mt-2 mb-5 text-black">{tribe?.date}</h3>
                       <p className="text-sm">{tribe?.desc}</p>
                     </div>
@@ -92,24 +104,10 @@ export default function Home() {
               )
             })
 
-            :
-            bestDeals.map((tribe) => {
-              return (
-                <div className="w-80 ml-2 shadow-lg mt-5 flex flex-col items-start justify-start animate-slideIn">
-                  <Image src={tribe?.image} alt="ii" className="w-full h-52" />
-                  <div className="pl-5 pr-5 pb-10 bg-white mt-5 flex flex-col items-center">
-
-                    <h1 className="mt-2 text-xl text-center text-black">{tribe?.title}</h1>
-                    <h3 className="mt-2 mb-5 text-black">{tribe?.date}</h3>
-                    <p className="text-sm">{tribe?.desc}</p>
-                  </div>
-                </div>
-              )
-            })
           }
         </div>
 
-        <button onClick={() => setmoreSelected(!moreSelected)} className="w-32 h-10 flex items-center justify-center bg-red-700 rounded-xl mt-10">
+        <button onClick={() => setmoreSelected(!moreSelected)} className="w-32 h-10 flex items-center justify-center bg-black text-white font-extrabold rounded-xl mt-20 z-10">
           See More
         </button>
 
@@ -118,7 +116,7 @@ export default function Home() {
       {/* WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE? */}
 
       <div className="w-full flex items-center justify-center flex-col">
-        <h2 className="border-black text-2xl font-serif text-black font-extrabold pt-10 pb-10">WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h2>
+        <h2 className="border-black text-2xl font-serif text-black font-extrabold pt-10 pb-10 text-left pl-64 w-full">WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h2>
         <div className="w-full h-full  mt-32 pr-80 pl-80 mb-20 flex flex-row items-center gap-20">
           <Image src={Corocdile} alt="corocodile" className="w-1/2 h-80 animate-slideleft" />
           <p className="animate-slideright text-lg">Ethiopia is Africa’s second largest country by population and 10th largest by size so there is a lot to know and be aware of.
@@ -129,21 +127,18 @@ export default function Home() {
 
       {/* Latest Article*/}
       <div className="w-full flex items-center justify-center flex-col">
+        <h2 className="border-black text-2xl font-serif text-black font-extrabold pt-10 pb-10 text-left w-full p-64">Articles</h2>
 
-        <div className="border-black border-t-2 border-b-2 pt-10 pb-10 mt-7">
-          <h2>WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h2>
-        </div>
+
         <div className="w-full h-full flex flex-wrap pl-64 pr-64">
 
           {LatestArticle.map((tribe) => {
             return (
-              <div className="w-80 ml-4 shadow-lg  bg-white mt-5 flex flex-col items-center">
-                <div className="pl-5 pt-5 pr-5 pb-10 bg-white mt-5 flex flex-col items-start justify-between">
+              <div className="w-80 ml-1 shadow-lg  bg-white mt-5 flex flex-col items-center pl-2 pr-2 ">
 
-                  <h1 className="mt-2 text-lg text-center">{tribe?.title}</h1>
-                  <h3 className="mt-2 mb-5 text-gray-500">{tribe?.writtenBy}</h3>
-                  <p className="text-sm text-gray-800">{tribe?.article}</p>
-                </div>
+                <h3 className="mt-2 mb-5 text-gray-500 text-left w-full ">{tribe?.writtenBy}</h3>
+                <p className="text-sm text-gray-800">{tribe?.article}</p>
+
               </div>
             )
           })}

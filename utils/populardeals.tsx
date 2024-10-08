@@ -66,4 +66,9 @@ export const LatestArticle = [{
     writtenBy: "by AEDeveloper | Mar 11, 2020",
     article: "o Famous for their body and face painting, the Karo people are a Nilotic ethnic group that resides along the east banks of the river in southern Ethiopia. With an estimated population between 1000 and 3000, the Karo tribe is one of the smallest tribes amongst the Omo.."
 },
+{
+    title: "A LOOK AT THE KARA TRIBE, ETHIOPIA’S FAMOUS BODY PAINTERS",
+    writtenBy: "by AEDeveloper | Mar 11, 2020",
+    article: "o Famous for their body and face painting, the Karo people are a Nilotic ethnic group that resides along the east banks of the river in southern Ethiopia. With an estimated population between 1000 and 3000, the Karo tribe is one of the smallest tribes amongst the Omo.."
+},
 ]
