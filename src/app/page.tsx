@@ -7,7 +7,8 @@ import { bestDeals } from "./../../utils/bestdeals"
 import img from "./assets/nene.jpg"
 import LogoImg from "./assets/prev.png"
 import { useState } from "react";
-import { BiArrowToRight } from "react-icons/bi";
+import { BiArrowToRight, BiArrowFromBottom, BiArrowToBottom, BiCalendar } from "react-icons/bi";
+import { FaLocationArrow } from "react-icons/fa";
 export const Header = () => {
   return (
     <div className="w-full h-48 flex flex-row items-center justify-between pl-64 pr-64 z-100  animate-slideIn">
@@ -38,18 +39,29 @@ export default function Home() {
         <button className="animate-slideIn bg-white rounded-xl pl-10 pt-5 pr-10 pb-5 items-center mt-10">Get in Touch</button>
 
 
-        <div className="flex flex-row items-center h-64 justify-between bg-white w-[50vh]">
-          <div>
-            <h1>
+        <div className="flex  flex-row items-center h-64 justify-between bg-white ">
+          <div className="flex flex-row items-center z-50 gap-5">
+            <FaLocationArrow color="white" className="border p-1 w-10 h-10 rounded-full" />
+            <h4 className="flex flex-col font-light text-gray-400 text-left">
               Destinations
-              <h2>Omo Valley</h2>
-            </h1>
+              <h2 className="font-bold">Omo Valley</h2>
+            </h4>
+            <BiArrowToBottom color="white" className="ml-1  p-1 w-8 h-8 rounded-full" />
           </div>
-          <div>
-
-          </div>
-          <div>
-
+          <div className="flex flex-row items-center z-50 gap-5">
+            <BiCalendar color="white" className="ml-1  p-1 w-8 h-8 rounded-full" />
+            <h4 className="flex flex-col font-light text-gray-400 text-left">
+              Date
+              <h2 className="font-bold">Aug 17, 2023</h2>
+            </h4>
+            <FaLocationArrow color="white" className="border p-1 w-10 h-10 rounded-full" />
+          </div> <div className="flex flex-row items-center z-50 gap-5">
+            <FaLocationArrow color="white" className="border p-1 w-10 h-10 rounded-full" />
+            <h4 className="flex flex-col font-light text-gray-400 text-left">
+              Destinations
+              <h2 className="font-bold">Omo Valley</h2>
+            </h4>
+            <BiArrowToBottom color="white" className="ml-1  p-1 w-8 h-8 rounded-full" />
           </div>
 
           <button className="animate-slideIn bg-black text-white rounded-2xl pl-10 pt-2 pr-10 pb-2   flex flex-row items-center gap-7">Book Now <BiArrowToRight color="orange" width={50} /></button>
