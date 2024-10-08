@@ -10,6 +10,7 @@ import LogoImg from "./assets/prev.png"
 import { useState } from "react";
 import { BiArrowToRight, BiArrowFromBottom, BiArrowToBottom, BiCalendar, BiUserCircle, BiUser } from "react-icons/bi";
 import { FaLocationArrow } from "react-icons/fa";
+import { TeamMember } from "../../utils/teamMember";
 export const Header = () => {
   return (
     <div className="w-full h-48 flex flex-row items-center justify-between pl-64 pr-64 z-100  animate-slideIn">
@@ -41,9 +42,11 @@ export default function Home() {
       <div className="w-full flex-col h-[80vh] flex items-center  text-center ">
         <h1 className="text-7xl text-pretty font-serif  mt-32 animate-slideIn">Travel to Ethiopia  An Amazing <br /> Natural Adventure</h1>
         <p className="z-10 text-white mt-4 text-sm">Discover the best and richest natural and historical country, we will guide you throught bottom to top <br /> where your wanderlust can be transformed into memorable journeys.</p>
+        <button className="animate-slideIn bg-green-200 font-bold rounded-2xl pl-10 pt-2 pr-10 pb-2  mt-10 flex flex-row items-center gap-5 hover:bg-black hover:text-white">Explore Now <FaLocationArrow color="orange" className="border-2 p-1 w-7 h-7 rounded-full" />
+        </button>
 
 
-        <div className="flex  flex-row items-center h-54 pt-5 pb-5 rounded-3xl pl-5 pr-5 justify-between z-10  bg-white  gap-10 mt-40">
+        <div className="flex w-[110vh] flex-row items-center h-54 pt-5 pb-5 rounded-3xl pl-5 pr-5 justify-between z-10  bg-white  gap-10 mt-44">
 
           <div className="flex flex-row items-center z-50 gap-5">
             <FaLocationArrow color="black" className="border-2 p-1 w-10 h-10 rounded-full" />
@@ -116,11 +119,36 @@ export default function Home() {
       {/* WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE? */}
 
       <div className="w-full flex items-center justify-center flex-col">
-        <h2 className="border-black text-2xl font-serif text-black font-extrabold pt-10 pb-10 text-left pl-64 w-full">WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h2>
-        <div className="w-full h-full  mt-32 pr-80 pl-80 mb-20 flex flex-row items-center gap-20">
+        <h2 className="text-2xl font-serif text-black font-extrabold pt-10 pb-10 text-left pl-64 w-full border-1 border-red-300">WHY ABSOLUTE ETHIOPIA IS THE COMPANY OF CHOICE?</h2>
+        <div className="w-full h-full  mt-10 pr-80 pl-80 mb-20 flex flex-row items-center gap-20">
           <Image src={Corocdile} alt="corocodile" className="w-1/2 h-80 animate-slideleft" />
           <p className="animate-slideright text-lg">Ethiopia is Africa’s second largest country by population and 10th largest by size so there is a lot to know and be aware of.
             We are locally born in Ethiopia and educated here. We know the country, the terrain and the people. Professionally qualified and certified to take charge of Ethiopian tourist expeditions, we promise to take care of you and provide you an experience like no other. Despite Ethiopia being known as a poor country, you will still feel that touch of luxury with our modern, top-quality transportation and accommodation services.</p>
+        </div>
+      </div>
+
+      <div className="w-full h-full flex-col flex bg-blue-400   items-center justify-center  pl-5 pr-5 pb-20 bg-gradient-to-r ">
+        <h1 className="text-black text-3xl font-bold mt-24">Team Members</h1>
+        <div className="w-full h-full flex-row flex bg-blue-400   items-center justify-center  pl-5 pr-5">
+
+          {
+            TeamMember?.map((tribe, index) => {
+              return (
+
+                <div className="w-80  mt-5 flex flex-col  z-10  shadow-2xl items-center justify-center  pt-10 bg-white rounded-xl ml-1">
+                  <Image src={tribe?.image} alt="ii" width={50} height={80} className="flex rounded-sm" />
+                  <div className="pl-5 pr-5 pb-10 bg-white pt-5 flex flex-col items-center">
+
+                    <h1 className=" text-xl text-center text-black">{tribe?.name}</h1>
+                    <h3 className="mt-2 mb-5 text-black">{tribe?.job}</h3>
+                  </div>
+                </div>
+
+
+              )
+            })
+
+          }
         </div>
       </div>
 
@@ -146,6 +174,6 @@ export default function Home() {
 
 
       </div>
-    </div>
+    </div >
   );
 }
