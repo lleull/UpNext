@@ -1,4 +1,4 @@
-import LogoImg from "./../app/assets/prev.png"
+import LogoImg from "./../../app/assets/prev.png"
 import Image from "next/image"
 export const Header = ({ setnewBooking }: any) => {
     return (

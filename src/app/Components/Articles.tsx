@@ -1,5 +1,5 @@
 import React from 'react'
-import { LatestArticle } from '../../utils/populardeals'
+import { LatestArticle } from '../../../utils/populardeals'
 
 function Articles() {
     return (

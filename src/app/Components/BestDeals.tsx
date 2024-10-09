@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { bestDeals } from '../../utils/bestdeals'
+import { bestDeals } from '../../../utils/bestdeals'
 
 function BestDeals() {
     return (

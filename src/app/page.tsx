@@ -11,10 +11,10 @@ import { useEffect, useState } from "react";
 import { BiArrowToRight, BiArrowFromBottom, BiArrowToBottom, BiCalendar, BiUserCircle, BiUser } from "react-icons/bi";
 import { FaLocationArrow } from "react-icons/fa";
 import { TeamMember } from "../../utils/teamMember";
-import { Header } from "@/Components/Header";
-import { BookingUi } from "@/Components/Booking";
-import HeroSection from "@/Components/HeroSection";
-import BestDeals from "@/Components/BestDeals";
+import { Header } from "@/app/Components/Header";
+import { BookingUi } from "@/app/Components/Booking";
+import HeroSection from "@/app/Components/HeroSection";
+import BestDeals from "@/app/Components/BestDeals";
 
 export default function Home() {
   const [moreSelected, setmoreSelected] = useState(true)
@@ -42,7 +42,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-full  items-center flex-col justify-center flex ">
+    <div className="w-full  items-center flex-col justify-center flex z-1">
       {newBooking ? <BookingUi setnewBooking={setnewBooking} /> : ""}
       <Image src={img} className="w-full h-[100vh] absolute top-0 z-0" alt="s" />
       <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
