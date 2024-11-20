@@ -76,7 +76,7 @@ export default function Home() {
             TeamMember?.map((tribe, index) => {
               return (
 
-                <div className="w-80  mt-5 flex flex-col  z-10  shadow-2xl items-center justify-center  pt-10 bg-white rounded-xl ml-1">
+                <div key={index} className="w-80  mt-5 flex flex-col  z-10  shadow-2xl items-center justify-center  pt-10 bg-white rounded-xl ml-1">
                   <Image src={tribe?.image} alt="ii" width={80} height={80} className="flex rounded-full" />
                   <div className="pl-5 pr-5 pb-10 bg-white pt-5 flex flex-col items-center">
 
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
 
             <div className="text-left w-1/4">
-              <h1 className="text-black font-serif font-bold mb-4 text-3xl">Testimonials</h1>
+              <h1 className="text-black font-serif font-bold mb-4 text-3xl">Testimonial</h1>
               <p className="text-md text-gray-800">"An unforgettable journey! The team took care of every detail. We saw places we never imagined!" - Jane Doe</p>
             </div>
 
